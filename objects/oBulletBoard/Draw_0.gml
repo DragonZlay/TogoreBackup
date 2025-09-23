@@ -72,7 +72,7 @@ if (global.resetBoxText == true) {
 if (global.drawBoxText == true) {
 	scribble_object.draw(74, 274, typist);
 	
-	if (typistskip == true) {
+	if (typistskip == true && typi == false) {
 		self.typist.skip();
 	}
 	

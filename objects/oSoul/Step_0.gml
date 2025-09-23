@@ -200,7 +200,7 @@ if (menu == true) {
 	} else if (buttonindex == 2) { //Item
 		if array_length(itemList) > 0 || itemate == true {
 			if itemmenu == false {
-				if (z && itemate == true && global.boxText == oBulletBoard.currentBoxText) {
+				if (z && itemate == true && oBulletBoard.typist.get_state() >= 1) {
 					itemate = false;
 					global.boxText = previoustext;
 					global.resetBoxText = true;
@@ -215,8 +215,8 @@ if (menu == true) {
 					o_speechBubble.currentdialogue = 0;
 					oneskip = false;
 					global.drawBoxText = false;	
-				} else if (xkey && itemate == true && global.boxText != oBulletBoard.currentBoxText) {
-					oBulletBoard.currentBoxText = global.boxText;	
+				} else if (xkey && itemate == true && oBulletBoard.typist.get_state() < 1) {
+					oBulletBoard.typistskip = true;
 				} else if (z && itemate == false) {
 					buttonacting = true;
 					itemmenu = true;
@@ -228,17 +228,20 @@ if (menu == true) {
 				}
 			} else { //If menu is open
 				if (xkey && itemate == false) {
-					buttonacting = false;
-					itemmenu = false;
+					show_debug_message(itemate);
 					global.boxText = previoustext;
 					global.resetBoxText = true;
+					buttonacting = false;
+					itemmenu = false;
+					skipthatitemshit = true;
 				} else {
 					if (z && itemate == false) {
 						itemate = true;
 						global.boxText = itemList[selecteditem][1];
 						global.resetBoxText = true;
 						scr_useItem(itemList[selecteditem]);
-						itemmenu = false;		
+						itemmenu = false;
+						skipthatitemshit = true;
 					}
 				}
 			
@@ -290,15 +293,17 @@ if (menu == true) {
 				if selecteditem >= array_length(itemList) {
 					selecteditem = array_length(itemList)-1;	
 				}
-		
+				
 				if (selecteditem >= 4 && itemate == false && itemmenu == true) {
 					itemPage = 1;
 					global.boxText = scr_getItems(itemPage);
 					oBulletBoard.currentBoxText = global.boxText;
+					oBulletBoard.typistskip = true;
 				} else if (itemate == false && itemmenu == true){
 					itemPage = 0;
 					global.boxText = scr_getItems(itemPage);
 					oBulletBoard.currentBoxText = global.boxText;
+					oBulletBoard.typistskip = true;
 				}
 		
 			
@@ -323,6 +328,10 @@ if (menu == true) {
 			
 			}
 		}
+		if (skipthatitemshit == true) { //Horrid Bandaid Fix
+			skipthatitemshit = false;
+			oBulletBoard.typist.reset();
+		}
 	} else if (buttonindex == 3) { //Mercy
 		if (z) {
 			if mercymenu == false {
@@ -333,6 +342,7 @@ if (menu == true) {
 				previoustext = global.boxText;
 				global.boxText = "   * Spare";
 				oBulletBoard.currentBoxText = global.boxText;
+				oBulletBoard.typistskip = true;
 			} else {
 				global.boxText = previoustext;
 				global.resetBoxText = true;
@@ -343,7 +353,7 @@ if (menu == true) {
 				y = 320;
 				global.limitedtobox = true;
 				menu = false;
-				bulletHandler.attacking = true;
+				bulletHandler.talking = true;
 				o_speechBubble.currentdialogue = 0;
 				oneskip = false;
 				global.drawBoxText = false;	

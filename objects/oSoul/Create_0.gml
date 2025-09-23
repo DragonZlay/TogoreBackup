@@ -35,6 +35,7 @@ previoustext = "";
 oneskip = false;
 sansDialogueIndex = 0;
 boxTextIndex = 0;
+skipthatitemshit = false;
 itemList = [["L.Caesars", "* You ate the Little Caesars.\n* You recovered 99 HP!", 99], ["CupWater ", "* You drank the Tap Water.\n* You recovered 40 HP!", 40], ["SpinPile ",  "* You ate the Spinach Pile.\n* You recovered 20 HP!", 20], ["FrySnow  ",  "* You ate the Fried Snow.\n* You recovered 40 HP!", 40], ["Dev      ",  "* You ate the Dev Team??\n* You lost 10 HP!", -10], ["ChillChil",  "* You ate the Chilled Chili.\n* You recovered 70 HP!", 70], ["TestingTX",  "* You ate the Testing Text.\n* You recovered 20 HP!", 20], ["Eightone",  "* You ate the won.\n* You recovered 81 HP!", 81]];
 audio_play_sound(megalo, 1, true);
 

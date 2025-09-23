@@ -151,6 +151,7 @@
     {"id":{"name":"oSoul","path":"objects/oSoul/oSoul.yy",},},
     {"id":{"name":"Phase1Attack1","path":"objects/Phase1Attack1/Phase1Attack1.yy",},},
     {"id":{"name":"Phase1Attack2","path":"objects/Phase1Attack2/Phase1Attack2.yy",},},
+    {"id":{"name":"Phase1Attack3","path":"objects/Phase1Attack3/Phase1Attack3.yy",},},
     {"id":{"name":"Phase1AttackFinal","path":"objects/Phase1AttackFinal/Phase1AttackFinal.yy",},},
     {"id":{"name":"sys_grandManager","path":"objects/sys_grandManager/sys_grandManager.yy",},},
     {"id":{"name":"sys_togoreManager","path":"objects/sys_togoreManager/sys_togoreManager.yy",},},

@@ -15,6 +15,7 @@ video_enable_loop(true);
 typistskip = false;
 typist = scribble_typist(false);
 typist.in(0.5, 0);
+typi = false;
 
 
 

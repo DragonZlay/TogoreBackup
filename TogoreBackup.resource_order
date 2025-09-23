@@ -112,6 +112,7 @@
     {"name":"oSansHead","order":1,"path":"objects/oSansHead/oSansHead.yy",},
     {"name":"oSansPants","order":2,"path":"objects/oSansPants/oSansPants.yy",},
     {"name":"Phase1Attack2","order":2,"path":"objects/Phase1Attack2/Phase1Attack2.yy",},
+    {"name":"Phase1Attack3","order":3,"path":"objects/Phase1Attack3/Phase1Attack3.yy",},
     {"name":"Phase1AttackFinal","order":1,"path":"objects/Phase1AttackFinal/Phase1AttackFinal.yy",},
     {"name":"sys_grandManager","order":4,"path":"objects/sys_grandManager/sys_grandManager.yy",},
     {"name":"sys_togoreManager","order":1,"path":"objects/sys_togoreManager/sys_togoreManager.yy",},

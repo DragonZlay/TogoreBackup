@@ -3,8 +3,8 @@
 function scr_useItem(item){
 
 	global.player_hp += item[2];
-	if global.player_hp > 92 {
-		global.player_hp = 92;	
+	if global.player_hp > 99 {
+		global.player_hp = 99;	
 	}
 	
 	
