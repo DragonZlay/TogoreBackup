@@ -1,0 +1,19 @@
+xdirection = 1;
+ydirection = 1;
+xsway = 0;
+ysway = 0;
+xangle = 0;
+yangle = 0;
+zangle = 0;
+xstartingpos = x;
+ystartingpos = y;
+zstartingxsize = image_xscale
+zstartingysize = image_yscale
+sprite_index = spr_sBody;
+
+xspdamp = 0.016; //XSpeed
+yspdamp = 0.050; //YSpeed
+xdistamp = 2;  //XDistance
+ydistamp = 2.8;   //YDistance
+image_speed = 0;
+image_index = 1;

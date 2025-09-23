@@ -1,0 +1,2 @@
+xstartingpos = x;
+ystartingpos = y;
