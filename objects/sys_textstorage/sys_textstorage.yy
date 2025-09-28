@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Phase1AttackFinal",
-  "eventList":[],
+  "%Name":"sys_textstorage",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Phase1AttackFinal",
+  "name":"sys_textstorage",
   "overriddenProperties":[],
   "parent":{
-    "name":"FullAttacks",
-    "path":"folders/Objects/FullAttacks.yy",
+    "name":"Battle System",
+    "path":"folders/Objects/System/Battle System.yy",
   },
   "parentObjectId":null,
   "persistent":false,

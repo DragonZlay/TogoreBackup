@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Phase1Attack3",
+  "%Name":"Phase1Attack5",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Phase1Attack3",
+  "name":"Phase1Attack5",
   "overriddenProperties":[],
   "parent":{
     "name":"FullAttacks",

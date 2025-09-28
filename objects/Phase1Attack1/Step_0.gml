@@ -17,7 +17,7 @@ switch (timer)
 		}
 	break;
 	
-	case 120:
+	case maxtimer:
 		bulletHandler.wavesend = true;
 		instance_destroy();
 	break;

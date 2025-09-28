@@ -2,6 +2,5 @@
 // You can write your code in this editor
 angleT = 0;
 objCount = 0;
-bulletCooldown = 7;
-maxBulletCooldown = 7;
-reverse = 1;
+bulletCooldown = 30;
+maxBulletCooldown = 30;

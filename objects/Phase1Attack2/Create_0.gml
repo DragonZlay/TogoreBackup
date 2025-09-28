@@ -1,7 +1,9 @@
 timer = 0;
-maxtimer = 2200;
+maxtimer = 1200;
 bullet1 = noone;
 bullet2 = noone;
 slashangle = 0;
-slashtimer = 60;
-maxslashspeed = 60;
+slashtimer = 30;
+maxslashspeed = 30;
+
+rotateTimer = 0;

@@ -1,4 +1,4 @@
-instance_create_layer(x,y,"Instances",o_textstorage);
+instance_create_layer(x,y,"Instances",sys_textstorage);
 instance_create_layer(x,y,"Instances",oParamas);
 instance_create_layer(x,y,"Instances",bulletHandler);
 instance_create_layer(x,y,"Instances",o_buttonhandler);

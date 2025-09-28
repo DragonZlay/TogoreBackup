@@ -50,15 +50,15 @@ if (menuenter == true) {
 	global.selectedbutton = "fight";
 	global.limitedtobox = false;
 	global.drawBoxText = true;
-	if boxTextIndex < array_length(o_textstorage.boxTextArray) - 1 {
+	if boxTextIndex < array_length(sys_textstorage.boxTextArray) - 1 {
 		boxTextIndex++;
 	}
-	global.boxText = o_textstorage.boxTextArray[boxTextIndex];
+	global.boxText = sys_textstorage.boxTextArray[boxTextIndex];
 	oBulletBoard.currentBoxText = "";
-	if sansDialogueIndex < array_length(o_textstorage.sansDialogueArray) - 1 {
+	if sansDialogueIndex < array_length(sys_textstorage.sansDialogueArray) - 1 {
 		sansDialogueIndex++;
 	}
-	global.sansText = o_textstorage.sansDialogueArray[sansDialogueIndex];
+	global.sansText = sys_textstorage.sansDialogueArray[sansDialogueIndex];
 	o_speechBubble.currentdialogue = 0;
 	global.resetSansText = true;
 	menuenter = false;
@@ -211,7 +211,7 @@ if (menu == true) {
 					y = 320;
 					global.limitedtobox = true;
 					menu = false;
-					bulletHandler.attacking = true;
+					bulletHandler.talking = true;
 					o_speechBubble.currentdialogue = 0;
 					oneskip = false;
 					global.drawBoxText = false;	

@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_textstorage",
+  "%Name":"obj_ringspawner",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_textstorage",
+  "name":"obj_ringspawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Battle System",
-    "path":"folders/Objects/System/Battle System.yy",
+    "name":"Direct",
+    "path":"folders/Objects/Basic Bullets/Direct.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_togorestanding",
+    "path":"sprites/spr_togorestanding/spr_togorestanding.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

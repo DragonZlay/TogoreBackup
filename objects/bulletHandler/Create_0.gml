@@ -8,7 +8,7 @@ blink = false;
 next = false;
 
 
-allwaves = [Phase1Attack1, Phase1Attack2, Phase1Attack3];
+allwaves = [Phase1Attack1, Phase1Attack2, Phase1Attack3, Phase1Attack4, Phase1Attack5];
 wave = allwaves[0];
 currentwave = 0;
 
